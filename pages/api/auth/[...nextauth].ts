@@ -43,6 +43,7 @@ export const authOptions: AuthOptions = {
         });
         if (!user || !user.hashedPassword) {
           throw new Error("Email does not exist.");
+          console.log("Sign in error");
         }
 
         const isCorrectPassword = await compare(
