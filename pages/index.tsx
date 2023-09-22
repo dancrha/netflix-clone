@@ -32,6 +32,7 @@ export default function Home() {
   const { isOpen, closeModal } = useInfoModal();
   return (
     <>
+      <title>Netflix Clone</title>
       <link
         rel='shortcut icon'
         href='/public/favicon.ico'
