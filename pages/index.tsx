@@ -7,6 +7,7 @@ import useInfoModal from "@/hooks/useInfoModal";
 import useMovieList from "@/hooks/useMovieList";
 import { NextPageContext } from "next";
 import { getSession } from "next-auth/react";
+import Head from "next/head";
 
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
@@ -31,6 +32,11 @@ export default function Home() {
   const { isOpen, closeModal } = useInfoModal();
   return (
     <>
+      <link
+        rel='shortcut icon'
+        href='/public/favicon.ico'
+        type='image/x-icon'
+      />
       <InfoModal visible={isOpen} onClose={closeModal} />
       <Navbar />
       <Billboard />
