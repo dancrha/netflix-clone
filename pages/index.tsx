@@ -34,6 +34,12 @@ export default function Home() {
     <>
       <CustomHead />
 
+      <link
+        rel='shortcut icon'
+        href='/public/favicon.ico'
+        type='image/x-icon'
+      />
+
       <InfoModal visible={isOpen} onClose={closeModal} />
       <Navbar />
       <Billboard />

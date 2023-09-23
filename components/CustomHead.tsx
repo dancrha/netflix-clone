@@ -7,11 +7,6 @@ const CustomHead: React.FC = () => {
   return (
     <Head>
       <title>{title}</title>
-      <link
-        rel='shortcut icon'
-        href='/public/favicon.ico'
-        type='image/x-icon'
-      />
     </Head>
   );
 };
